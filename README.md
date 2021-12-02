@@ -58,6 +58,12 @@ We could also quickly and easily create a history containing all the generations
 
 ---
 
-Side note: the UI was not important but I decided to use SwiftUI as a personal challenge because:
+### Side note 1
+
+The UI was not important but I decided to use SwiftUI as a personal challenge because:
 - I’m currently learning about it
 - It allows to have some decent UI very quickly and easily
+
+### Side note 2
+I wanted to use SwiftLint, but unfortunately it's not yet possible within packages 
+(but [will soon be](https://github.com/apple/swift-evolution/blob/main/proposals/0303-swiftpm-extensible-build-tools.md)!)
