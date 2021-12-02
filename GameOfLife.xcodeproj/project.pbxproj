@@ -12,6 +12,7 @@
 		A67FD03027590C8700F06390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67FD02F27590C8700F06390 /* Assets.xcassets */; };
 		A67FD03327590C8700F06390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67FD03227590C8700F06390 /* Preview Assets.xcassets */; };
 		A67FD03D27590C8800F06390 /* GameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD03C27590C8800F06390 /* GameOfLifeTests.swift */; };
+		A67FD05827590F8800F06390 /* BusinessLogic in Frameworks */ = {isa = PBXBuildFile; productRef = A67FD05727590F8800F06390 /* BusinessLogic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		A67FD03227590C8700F06390 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A67FD03827590C8800F06390 /* GameOfLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67FD03C27590C8800F06390 /* GameOfLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeTests.swift; sourceTree = "<group>"; };
+		A67FD05527590F6800F06390 /* BusinessLogic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BusinessLogic; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67FD05827590F8800F06390 /* BusinessLogic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,8 @@
 				A67FD02A27590C8500F06390 /* GameOfLife */,
 				A67FD03B27590C8800F06390 /* GameOfLifeTests */,
 				A67FD02927590C8500F06390 /* Products */,
+				A67FD05627590F8800F06390 /* Frameworks */,
+				A67FD05527590F6800F06390 /* BusinessLogic */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +102,13 @@
 			path = GameOfLifeTests;
 			sourceTree = "<group>";
 		};
+		A67FD05627590F8800F06390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +125,9 @@
 			dependencies = (
 			);
 			name = GameOfLife;
+			packageProductDependencies = (
+				A67FD05727590F8800F06390 /* BusinessLogic */,
+			);
 			productName = GameOfLife;
 			productReference = A67FD02827590C8500F06390 /* GameOfLife.app */;
 			productType = "com.apple.product-type.application";
@@ -478,6 +493,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A67FD05727590F8800F06390 /* BusinessLogic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BusinessLogic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A67FD02027590C8500F06390 /* Project object */;
 }
