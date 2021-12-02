@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A67FD02C27590C8500F06390 /* GameOfLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD02B27590C8500F06390 /* GameOfLifeApp.swift */; };
-		A67FD02E27590C8500F06390 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD02D27590C8500F06390 /* ContentView.swift */; };
+		A67FD02E27590C8500F06390 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD02D27590C8500F06390 /* GameView.swift */; };
 		A67FD03027590C8700F06390 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67FD02F27590C8700F06390 /* Assets.xcassets */; };
 		A67FD03327590C8700F06390 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67FD03227590C8700F06390 /* Preview Assets.xcassets */; };
 		A67FD03D27590C8800F06390 /* GameOfLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD03C27590C8800F06390 /* GameOfLifeTests.swift */; };
 		A67FD05827590F8800F06390 /* BusinessLogic in Frameworks */ = {isa = PBXBuildFile; productRef = A67FD05727590F8800F06390 /* BusinessLogic */; };
+		A67FD05B27592C9A00F06390 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD05A27592C9A00F06390 /* GridView.swift */; };
+		A67FD05D27592CBA00F06390 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD05C27592CBA00F06390 /* CellView.swift */; };
+		A67FD05F27592D0500F06390 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67FD05E27592D0500F06390 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +31,15 @@
 /* Begin PBXFileReference section */
 		A67FD02827590C8500F06390 /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67FD02B27590C8500F06390 /* GameOfLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeApp.swift; sourceTree = "<group>"; };
-		A67FD02D27590C8500F06390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A67FD02D27590C8500F06390 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A67FD02F27590C8700F06390 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A67FD03227590C8700F06390 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A67FD03827590C8800F06390 /* GameOfLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67FD03C27590C8800F06390 /* GameOfLifeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfLifeTests.swift; sourceTree = "<group>"; };
 		A67FD05527590F6800F06390 /* BusinessLogic */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BusinessLogic; sourceTree = SOURCE_ROOT; };
+		A67FD05A27592C9A00F06390 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		A67FD05C27592CBA00F06390 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		A67FD05E27592D0500F06390 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				A67FD02B27590C8500F06390 /* GameOfLifeApp.swift */,
-				A67FD02D27590C8500F06390 /* ContentView.swift */,
+				A67FD02D27590C8500F06390 /* GameView.swift */,
+				A67FD05A27592C9A00F06390 /* GridView.swift */,
+				A67FD05C27592CBA00F06390 /* CellView.swift */,
+				A67FD05E27592D0500F06390 /* Constants.swift */,
 				A67FD02F27590C8700F06390 /* Assets.xcassets */,
 				A67FD03127590C8700F06390 /* Preview Content */,
 			);
@@ -212,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67FD02E27590C8500F06390 /* ContentView.swift in Sources */,
+				A67FD05F27592D0500F06390 /* Constants.swift in Sources */,
+				A67FD05D27592CBA00F06390 /* CellView.swift in Sources */,
+				A67FD02E27590C8500F06390 /* GameView.swift in Sources */,
+				A67FD05B27592C9A00F06390 /* GridView.swift in Sources */,
 				A67FD02C27590C8500F06390 /* GameOfLifeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

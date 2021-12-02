@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import BusinessLogic
 
 @main
 struct GameOfLifeApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	let game = Game(
+		configuration: .default,
+		generations: .finite(5)
+	)
+
+	var body: some Scene {
+		WindowGroup {
+			GameView(game: game)
+		}
+	}
 }
